@@ -1,0 +1,14 @@
+<h1>SIMPSONS PERSONAJES</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <simpson-list [characterList]="characters"
+          (onDelete)="onDeleteCharacter($event)">
+    </simpson-list>
+
+  </div>
+  <div class="col">
+    <simpsons-add-character (onNewCharacter)="onNewCharacterMain($event)"></simpsons-add-character>
+  </div>
+</div>
